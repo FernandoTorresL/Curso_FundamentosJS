@@ -1,5 +1,3 @@
-var nombre
-
-nombre = 'Fer'
+var nombre = 'Fer'
 
 console.log('Hola ' + nombre)
