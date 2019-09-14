@@ -21,3 +21,10 @@ var totalSinError = precioDeVino * 100 * 3 / 100
 
 var total = Math.round(precioDeVino * 100 * 3) / 100
 var totalStr = total.toFixed(2)
+
+var totalStr2 = parseFloat(totalStr)
+
+var pizza = 8
+var persona = 2
+
+var cantidadDePorcionesPorPersona = pizza / persona
