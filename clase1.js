@@ -1,1 +1,5 @@
-console.log('Hola mundo JS!')
+var nombre
+
+nombre = 'Fer'
+
+console.log('Hola ' + nombre)
