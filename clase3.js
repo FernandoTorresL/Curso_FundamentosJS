@@ -16,5 +16,5 @@ var jugarAlFutbol = 3
 peso -= jugarAlFutbol
 
 var precioDeVino = 200.3
-var total = precioDeVino * 3
-
+var totalConError = precioDeVino * 3
+var totalSinError = precioDeVino * 100 * 3 / 100
