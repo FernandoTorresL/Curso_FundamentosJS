@@ -18,3 +18,6 @@ peso -= jugarAlFutbol
 var precioDeVino = 200.3
 var totalConError = precioDeVino * 3
 var totalSinError = precioDeVino * 100 * 3 / 100
+
+var total = Math.round(precioDeVino * 100 * 3) / 100
+var totalStr = total.toFixed(2)
