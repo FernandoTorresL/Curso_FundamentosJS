@@ -52,7 +52,11 @@ imprimirProfesiones(sacha)
 
 const MAYORIA_DE_EDAD = 18
 
-var esMayorDeEdad = function (persona) {
+/* const esMayorDeEdad = function (persona) {
+    return persona.edad >= MAYORIA_DE_EDAD
+} */
+
+const esMayorDeEdad = persona => {
     return persona.edad >= MAYORIA_DE_EDAD
 }
 
