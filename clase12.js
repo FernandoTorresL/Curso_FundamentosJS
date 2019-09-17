@@ -56,9 +56,7 @@ const MAYORIA_DE_EDAD = 18
     return persona.edad >= MAYORIA_DE_EDAD
 } */
 
-const esMayorDeEdad = persona => {
-    return persona.edad >= MAYORIA_DE_EDAD
-}
+const esMayorDeEdad = persona => persona.edad >= MAYORIA_DE_EDAD
 
 function imprimirSiEsMayorDeEdad(persona) {
     if (esMayorDeEdad(persona))
