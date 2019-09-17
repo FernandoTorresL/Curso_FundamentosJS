@@ -63,7 +63,18 @@ function imprimirSiEsMayorDeEdad(persona) {
         console.log(`${persona.nombre} es mayor de edad`)
     else
         console.log(`${persona.nombre} es aún menor de edad`)
-}   
+}
+
+const esMenorDeEdad = persona => !esMayorDeEdad(persona)
+
+function permitirAcceso(persona) {
+    if (!esMayorDeEdad(persona)) {
+        console.log('ACCESO DENEGADO')
+    }
+}
 
 imprimirSiEsMayorDeEdad(sacha)
+permitirAcceso(sacha)
+
 imprimirSiEsMayorDeEdad(juan)
+permitirAcceso(juan)
