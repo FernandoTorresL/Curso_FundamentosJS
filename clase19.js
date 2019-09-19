@@ -45,8 +45,11 @@ const esBaja = ({ altura }) => altura <= 1.8
 
 const pasarAlturaCms = persona => {
     // persona.altura = persona.altura * 100
-    persona.altura *= 100
-    return persona
+    // persona.altura *= 100
+    return {
+        ...persona,
+        altura: persona.altura * 100
+    }
 }
 
 var personas = [ sacha, alan, martin, dario, vicky, paula ]
