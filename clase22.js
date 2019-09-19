@@ -6,10 +6,13 @@ function Persona(nombre, apellido, altura) {
 }
 
 Persona.prototype.saludar = () => {
-    console.log(`Hola, me llamo ${this.nombre} ${this.apellido}. ${this.soyAlto()}`)
+    console.log(`Hola, me llamo ${this.nombre} ${this.apellido}.`)
 }
 
-Persona.prototype.soyAlto = () => this.altura > 1.8
+Persona.prototype.soyAlto = () => {
+    //debugger
+    return this.altura > 1.8
+}
 
 var sacha = new Persona('Sacha', 'Lifszyc', 1.9)
 var erika = new Persona('Erika', 'Luna', 1.6)
