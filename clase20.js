@@ -47,10 +47,22 @@ var paula = {
     cantidadDeLibros: 182
 }
 
-var acum = 0
+var personas = [ sacha, alan, martin, dario, vicky, paula ]
+
+// Obteniendo el total de libros con ciclo for
+/* var acum = 0
 
 for (var i = 0; i < personas.length; i++) {
     acum = acum + personas[i].cantidadDeLibros
 }
 
-console.log(`En total todos tienen ${acum} libros`)
+console.log(`En total todos tienen ${acum} libros`) */
+
+// Obteniendo el total de libros con función reduce
+const reducer = (acum, persona) => {
+    return acum + persona.cantidadDeLibros
+}
+
+var totalDeLibros = personas.reduce(reducer, 0)
+
+console.log(`Usando Reduce:En total todos tienen ${totalDeLibros} libros`)
