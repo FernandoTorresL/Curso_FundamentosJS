@@ -59,9 +59,9 @@ for (var i = 0; i < personas.length; i++) {
 console.log(`En total todos tienen ${acum} libros`) */
 
 // Obteniendo el total de libros con función reduce
-const reducer = (acum, persona) => {
-    return acum + persona.cantidadDeLibros
-}
+// Reescribiendo Arrow function
+const reducer = (acum, { cantidadDeLibros }) => 
+    acum + cantidadDeLibros
 
 var totalDeLibros = personas.reduce(reducer, 0)
 
