@@ -40,17 +40,16 @@ var paula = {
     altura: 1.76
 }
 
-// Reescribiendo la arrow function v2
 const esAlta = ({ altura }) => altura > 1.8
+const esBaja = ({ altura }) => altura <= 1.8
 
 var personas = [ sacha, alan, martin, dario, vicky, paula ]
 
-// Ésta versión del filtro es preferible. Se puede leer, entender mejor.
  var personasAltas = personas.filter(esAlta)
+ var personasBajas = personas.filter(esBaja)
 
-// Reescribiendo el filtro de arriba
-/* var personasAltas = personas.filter(function (persona) {
-    return persona.altura > 1.8
-}) */
-
+console.log("Personas Altas:")
 console.log(personasAltas)
+
+console.log("Personas Bajas:")
+console.log(personasBajas)
