@@ -43,19 +43,15 @@ var paula = {
 const esAlta = ({ altura }) => altura > 1.8
 const esBaja = ({ altura }) => altura <= 1.8
 
-const pasarAlturaCms = persona => {
-    // persona.altura = persona.altura * 100
-    // persona.altura *= 100
-    return {
-        ...persona,
-        altura: persona.altura * 100
-    }
-}
+
+// persona.altura = persona.altura * 100
+// Reescribiendo Arrow Function:
+const pasarAlturaCms = persona => ({
+    ...persona,
+    altura: persona.altura * 100
+})
 
 var personas = [ sacha, alan, martin, dario, vicky, paula ]
-
-var personasAltas = personas.filter(esAlta)
-var personasBajas = personas.filter(esBaja)
 
 var personasCms = personas.map(pasarAlturaCms)
 
