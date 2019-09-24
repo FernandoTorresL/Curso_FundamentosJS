@@ -4,6 +4,8 @@ const PEOPLE_URL = 'people/:id'
 const lukeUrl = `${API_URL}${PEOPLE_URL.replace(':id', 1)}`
 const opts = { crossDomain: true }
 
-$.get(lukeUrl, opts, function () {
-    console.log(arguments)
-})
+const onPeopleResponse = function (person) {
+    console.log(`Hola, yo soy ${person.name}`)
+}
+
+$.get(lukeUrl, opts, onPeopleResponse)
