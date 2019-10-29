@@ -38,7 +38,11 @@ class Desarrollador extends Persona {
 }
 
 function responderSaludo(nombre, apellido, esDev) {
-    console.log(`Buen día ${nombre} ${apellido} y soy Desarrollador(a).`)
+<<<<<<< HEAD
+    console.log(`Buen día ${nombre} ${apellido}`)
+=======
+    console.log(`Buen día ${nombre} ${apellido}. Yo soy Desarrollador(a).`)
+>>>>>>> 617b41204648e9ab831779f26bc87a90ce0104f4
     if (esDev) {
         console.log (`Ah mirá, no sabía que eras desarrollador/a`)
     }
