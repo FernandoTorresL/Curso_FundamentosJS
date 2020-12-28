@@ -1,4 +1,4 @@
-# fundamentos_js
+# Curso_FundamentosJS
 Practicas del curso "Fundamentos de JavaScript" de la EscuelaJS México-Platzi
 
 # Javascript Fundamentals Course, Platzi
