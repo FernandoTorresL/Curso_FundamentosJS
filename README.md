@@ -21,7 +21,7 @@ PlatziVideo Project is the final project on EscuelaJS, Platzi, México and has s
 
 Javascript is a programming language to use with a browser.
 Build programs, get to know JS, conditionals and control structures.
-Learn about JS variables and functions 
+Learn about JS variables and functions
 
 ---
 
