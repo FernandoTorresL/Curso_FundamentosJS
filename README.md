@@ -5,6 +5,10 @@ Practicas del curso "Fundamentos de JavaScript" de la EscuelaJS México-Platzi
 
 ## (Curso de Fundamentos de Javascript, Platzi, versión 2019)
 
+### Project Repo
+
+[Platzi Repo](https://github.com/platzi/FundamentosJSCurso/)
+
 ### Part of PlatziVideo Project
 
 PlatziVideo Project is the final project on EscuelaJS, Platzi, México and has several previous parts:
