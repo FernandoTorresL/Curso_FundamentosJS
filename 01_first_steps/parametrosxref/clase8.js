@@ -11,6 +11,9 @@ var dario = {
 }
 
 function imprimirNombreyEdad(persona) {
+    // var nombre = persona.nombre
+    var { nombre } = persona
+
     console.log(`Hola, me llamo ${persona.nombre} y tengo ${persona.edad} años.`)
 }
 
