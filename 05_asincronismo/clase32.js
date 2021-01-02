@@ -1,4 +1,4 @@
-const API_URL = 'https://swapi.co/api/'
+const API_URL = 'https://swapi.dev/api/'
 const PEOPLE_URL = 'people/:id'
 const opts = { crossDomain: true }
 
@@ -18,7 +18,7 @@ function onError(id) {
     console.log(`Sucedió un error al obtener el personaje ${id}`)
 }
 
-obtenerPersonaje(17)
+obtenerPersonaje(1)
     .then(function (personaje) {
         console.log(`El personaje 1 es ${personaje.name} | ${personaje.url}`)
     })

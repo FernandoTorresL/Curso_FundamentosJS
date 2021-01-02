@@ -1,4 +1,4 @@
-const API_URL = 'https://swapi.co/api/'
+const API_URL = 'https://swapi.dev/api/'
 const PEOPLE_URL = 'people/:id'
 const opts = { crossDomain: true }
 
@@ -12,7 +12,7 @@ function obtenerPersonaje(id, callback) {
         })
 }
 
-obtenerPersonaje(15, function (personaje) {
+obtenerPersonaje(18, function (personaje) {
     console.log(`Hola, yo soy ${personaje.name} | ${personaje.url}`)
 
     obtenerPersonaje(16, function (personaje) {
@@ -21,7 +21,7 @@ obtenerPersonaje(15, function (personaje) {
         obtenerPersonaje(17, function (personaje) {
             console.log(`Hola, yo soy ${personaje.name} | ${personaje.url}`)
 
-            obtenerPersonaje(13, function (personaje) {
+            obtenerPersonaje(18, function (personaje) {
                 console.log(`Hola, yo soy ${personaje.name} | ${personaje.url}`)
             })
         })

@@ -1,4 +1,4 @@
-const API_URL = 'https://swapi.co/api/'
+const API_URL = 'https://swapi.dev/api/'
 const PEOPLE_URL = 'people/:id'
 const opts = { crossDomain: true }
 
@@ -18,7 +18,7 @@ function onError(id) {
     console.log(`Sucedió un error al obtener el personaje ${id}`)
 }
 
-var ids = [1, 2, 3, 4, 5, 6, 7, 8]
+var ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 21, 18, 19, 20]
 
 /* var promesas = ids.map(function (id) {
     return obtenerPersonaje(id)
@@ -26,5 +26,5 @@ var ids = [1, 2, 3, 4, 5, 6, 7, 8]
 var promesas = ids.map(id => obtenerPersonaje(id))
 Promise
     .all(promesas)
-    .then(personajes => console.log(personajes))
+    .then(personajes => console.table(personajes))
     .catch(onError)

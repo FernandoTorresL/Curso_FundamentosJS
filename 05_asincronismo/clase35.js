@@ -1,4 +1,4 @@
-const API_URL = 'https://swapi.co/api/'
+const API_URL = 'https://swapi.dev/api/'
 const PEOPLE_URL = 'people/:id'
 const opts = { crossDomain: true }
 
@@ -24,6 +24,7 @@ async function obtenerPersonajes() {
     try {
         var personajes = await Promise.all(promesas)
         console.log(personajes)
+        console.table(personajes)
     } catch (id) {
         onError(id)
     }
