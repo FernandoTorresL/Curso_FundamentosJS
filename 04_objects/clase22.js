@@ -10,7 +10,7 @@ Persona.prototype.saludar = () => {
 }
 
 Persona.prototype.soyAlto = () => {
-    //debugger
+    debugger
     return this.altura > 1.8
 }
 
@@ -18,7 +18,7 @@ var sacha = new Persona('Sacha', 'Lifszyc', 1.9)
 var erika = new Persona('Erika', 'Luna', 1.6)
 var arturo = new Persona('Arturo', 'Martínez', 1.8)
 
-// ¡Todas dan false!!
+// ¡Todas dan false!! Esto ocurre por usar arrow functions: this === windows
 sacha.soyAlto()
 erika.soyAlto()
 arturo.soyAlto()
