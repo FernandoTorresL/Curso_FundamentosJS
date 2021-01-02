@@ -6,6 +6,9 @@ class Persona {
     }
 
     saludar(fn) {
+        // var nombre = this.nombre
+        // var apellido = this.apellido
+        // Destructurando se usa una sola línea:
         var { nombre, apellido } = this
 
         console.log(`Hola, me llamo ${nombre} ${apellido}.`)
@@ -27,7 +30,7 @@ class Desarrollador extends Persona {
     saludar(fn) {
         // var nombre = this.nombre
         // var apellido = this.apellido
-        // Lo anterior es equivalente a 
+        // Lo anterior es equivalente a:s
         var { nombre, apellido } = this
 
         console.log(`Hola, me llamo ${nombre} ${apellido} y soy Desarrollador(a).`)
